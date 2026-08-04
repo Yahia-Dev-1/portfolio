@@ -2,9 +2,10 @@ import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+gsap.registerPlugin(ScrollTrigger);
+
 export const useScrollReveal = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     console.log('✅ GSAP و ScrollTrigger محمّلة بنجاح');
 
     // Fade in on scroll
