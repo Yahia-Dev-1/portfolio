@@ -18,6 +18,7 @@ export default defineConfig({
     outDir: isVercel ? "dist" : "docs",
   },
   resolve: {
+    dedupe: ["gsap"],
     alias: {
       "@": path.resolve(__dirname, "src"),
     },
