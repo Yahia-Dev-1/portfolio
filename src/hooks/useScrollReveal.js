@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 export const useScrollReveal = () => {
   useEffect(() => {
@@ -87,9 +88,9 @@ export const useScrollReveal = () => {
     });
 
     console.log('🎨 جميع الـ scroll animations تم تعيينها بنجاح');
-  }, []);
 
-  return () => {
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-  };
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 };

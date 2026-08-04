@@ -6,14 +6,16 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+const isVercel = Boolean(process.env.VERCEL);
+
 export default defineConfig({
-  base: '/portfolio/',
+  base: isVercel ? "/" : "/portfolio/",
   plugins: [
     react(),
     tailwindcss(),
   ],
   build: {
-    outDir: 'docs',
+    outDir: isVercel ? "dist" : "docs",
   },
   resolve: {
     alias: {
