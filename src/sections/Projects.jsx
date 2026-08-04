@@ -1,11 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 const projects = [
   {
     title: "HTML Mastery Path",
     description:
       "An interactive learning platform designed to help beginners learn HTML through structured lessons, practical challenges, and interactive quizzes.",
-    image: "/portfolio/html.jpeg",
+    image: asset("html.jpeg"),
     tags: ["HTML5", "CSS3", "Education", "Responsive Design"],
     link: "https://html-amber-pi.vercel.app",
   },
@@ -13,7 +14,7 @@ const projects = [
     title: "Yahia Store",
     description:
       "A modern e-commerce platform built with React and Supabase, featuring product browsing, search, authentication, and a practical shopping experience.",
-    image: "/portfolio/e-commer.jpeg",
+    image: asset("e-commer.jpeg"),
     tags: ["React", "Supabase", "E-commerce", "Shopping Cart"],
     link: "https://e-commer-react-supabase.vercel.app",
   },
@@ -21,7 +22,7 @@ const projects = [
     title: "Climate Change Awareness",
     description:
       "An educational platform focused on climate change, exploring its causes, global impact, and practical solutions through engaging content and interactive tools.",
-    image: "/portfolio/Climate change.jpeg",
+    image: asset("Climate change.jpeg"),
     tags: ["Climate Action", "Education", "Interactive Tools", "Carbon Footprint"],
     link: "https://yahia-dev-1.github.io/Climate-change",
   },
@@ -29,7 +30,7 @@ const projects = [
     title: "Calories Tracker",
     description:
       "A practical nutrition tracking application that helps users explore food, monitor daily calories and macronutrients, and save their favorite choices.",
-    image: "/portfolio/caloris.jpeg",
+    image: asset("caloris.jpeg"),
     tags: ["Web Development", "Nutrition", "Dark Mode", "Data Tracking"],
     link: "https://yahia-dev-1.github.io/Calories",
   },

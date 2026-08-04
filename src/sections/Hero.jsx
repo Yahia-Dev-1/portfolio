@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import { asset } from "@/lib/assets";
 
 import {
   ArrowRight,
@@ -142,7 +143,7 @@ SELF-TAUGHT DEVELOPER
               <div className="relative glass rounded-3xl p-2 glow-border hover-lift">
 
                 <img
-                  src="/portfolio/portofolio.jpeg"
+                  src={asset("portofolio.jpeg")}
                   alt="Pedro Machado"
                   className="w-full aspect-[4/5] object-cover rounded-2xl"
                   style={{ objectFit: 'cover' }}

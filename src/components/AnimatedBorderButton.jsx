@@ -1,9 +1,10 @@
 import { Download } from "lucide-react";
+import { asset } from "@/lib/assets";
 
 export const AnimatedBorderButton = () => {
   return (
     <a
-      href="../public/cv.pdf"
+      href={asset("Cv.pdf")}
       download="Yahia_CV.pdf"
       className="relative bg-transparent border border-border 
       text-foreground hover:border-primary/50 transition-all
